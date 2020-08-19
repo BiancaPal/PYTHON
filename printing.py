@@ -1,5 +1,5 @@
-print("Winter is comming.")
-print("You know nothing" , "Bianca Maria Pal")
+
+#"Gabriel Garcia Marquez, part of poem" 
 
 print("If for a moment God would forget that I am a rag doll and give me a scrap of life, possibly I would not say everything that I think, but I would definitely think everything that I say.")
 
