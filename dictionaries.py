@@ -17,7 +17,7 @@ print(states.get('NY','Not found'))
 print(states.keys())
 print(states.values())
 
-#user = ['Bianca', 1.74, 39, 'Blue']
+# user = ['Bianca', 1.74, 39, 'Blue']
 user = {'name': 'Bianca', 'height': 1.74, 'shoe size': 39, 'eye color': 'Blue'}
 
 blog_post = {'title': '11 Sexy Uses for dictionaries', 'body': 'Blah Blah Blah'}
@@ -47,7 +47,7 @@ print(people)
 # print a key out of people list
 
 for person in people:
-    print(person['height'])
+    print(person.get('height'))
 
 
 
