@@ -32,8 +32,8 @@ def print_first_and_last_word(sentence):
     words = break_words(sentence)
     first_word = print_first_word(words)
     last_word = print_last_word(words)
-
-    return {'first_word': first_word,'last_word': last_word}
+    both= {'first_word': first_word,'last_word': last_word}
+    return(both['first_word'],both['last_word'])
 
 demitri_martin_joke = """I used to play sports.
 Then I realized you can buy trophies. Now I am good at everything."""
@@ -51,13 +51,14 @@ def print_verse(bottles):
     print(bottles, "bottles of beer.")
     print("Take one down and pass it around,", end = ' ')
     print(bottles -1, "bottles of beer on the wall. \n")
+    return (" ")
 
 def print_last_verse():
     print("No more bottles of beer on the wall,",end= ' ')
     print("no more bottles of beer")
     print("Go to the store and buy some more,", end= ' ')
     print("99 bottles of beer on the wall.\n")
-
+    return (" ")
 
 # sing(botttles)
 def sing (bottles):
@@ -65,7 +66,7 @@ def sing (bottles):
         if number > 0:
             print(print_verse(number))
         else:
-            print(print_last_verse())
+            return (print(print_last_verse()))
 
 print(sing(bottles_of_beer))
 
