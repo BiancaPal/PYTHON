@@ -1,6 +1,4 @@
-# states = ['NY', 'PA', 'CA']
-# states = ['New York', 'Pennysilvania', 'California']
-# states ['New York', 'NY', 'Pennysilvania', 'PA', 'California', 'CA']
+
 
 states = {'NY': 'New York', 'PA': 'Pennysilvania', 'CA': 'California'}
 
@@ -17,8 +15,7 @@ print(states.get('NY','Not found'))
 print(states.keys())
 print(states.values())
 
-# user = ['Bianca', 1.74, 39, 'Blue']
-user = {'name': 'Bianca', 'height': 1.74, 'shoe size': 39, 'eye color': 'Blue'}
+user = {'name': 'Bianca', 'height': 1.74, 'shoe_size': 39, 'eye_color': 'Blue'}
 
 blog_post = {'title': '11 Sexy Uses for dictionaries', 'body': 'Blah Blah Blah'}
 
@@ -36,7 +33,7 @@ animal_sounds= {
 
 # dictionaries inside of lists
 
-Bianca = {'name': 'Bianca', 'height': 1.74, 'shoe size': 39, 'eye color': 'Blue'}
+Bianca = {'name': 'Bianca', 'height': 1.74, 'shoe_size': 39, 'eye_color': 'Blue'}
 Alex = {'name': 'Alex', 'height': 1.83, 'shoe size': 43, 'eye color': 'Brown'}
 Sarah = {'name': 'Sarah', 'height': 1.78, 'shoe size': 40, 'eye color': 'Brown'}
 
