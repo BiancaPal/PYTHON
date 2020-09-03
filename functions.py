@@ -43,13 +43,15 @@ print(name)
 def uppercase_and_reverse(str):
   return str.upper()[::-1]
 
+print(uppercase_and_reverse("banana")) 
+
+# example of calling a function inside a function
+
 def uppercase(text):
   return text.upper()
 
 def reverse(text):
   return uppercase(text[::-1])
-
-print(uppercase_and_reverse("banana")) 
 
 print(reverse("bananna"))
 
