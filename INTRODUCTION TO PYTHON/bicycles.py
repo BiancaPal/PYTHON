@@ -24,3 +24,63 @@ print(bicycles[-2])
 # You can use f-strings to create a message based on a value from a list.
 message = f"My first bicycle was a {bicycles[0].title()}."
 print(message)
+
+# For modifying elements in a list, use the name of the list followed by the index of the element you want to change, and then provide the new value you want that item to have.
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+
+motorcycles[0]= 'ducati'
+print(motorcycles)
+
+# To append elements to the end of a list use the method .append('insert the element')
+
+motorcycles.append('honda')
+print(motorcycles)
+
+cars = []
+
+cars.append('citroen')
+cars.append('audi') 
+cars.append('bentley')
+cars.append('ferrari') 
+cars.append('lamborghini')
+
+print(cars)
+
+# To insert Elements into a list, we call the insert() method, in the parentheses you'll need to specify the position, and the element.
+# The insert method opens a space at the position you specified and stores the value in that location.
+cars.insert(5,'jaguar')
+print(cars)
+
+# To remove an item or a set of items from a list.
+del cars[0]
+print(cars)
+
+# To remove the last item of a list, but it lets you work with that after removing it.
+print(cars)
+
+popped_cars = cars.pop()
+print(cars)
+print(popped_cars)
+print(f"The last car I owned was a {popped_cars}")
+
+# You can pop() to remove an item from any position in a list by including the index of the item you want to remove in parentheses.
+
+first_owned = cars.pop(0)
+print(f"The first car I owned was a {first_owned}")
+
+# Sometimes you don't know the exact index of the value in the list, then you can use remove() method
+
+cars.remove('ferrari')
+print(cars)
+
+# You can also remove() method to work with a value that's being removed from a list.
+
+too_expensive= 'lamborghini'
+cars.remove(too_expensive)
+print(cars)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+# The remove() method deletes only the first occurrence of the value you specify. If there's a possibility the value appears more than oncein the list, you'll need to usr a loop to make sure all the occurrencies of the value are removed.
+
