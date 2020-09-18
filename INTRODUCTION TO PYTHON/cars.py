@@ -31,6 +31,53 @@ print(cars)
 
 # You can reverse the changes by applying reverse() again
 
+cars.reverse()
+print(cars)
+
 # Finding the length of a list, by using len() function. Python counts the items in a list starting with one, so you shouldn't run into any offby-one-errors when determining the lenght of a list.
 
 print(len(cars))
+
+# IF STATEMENTS
+# Python's if statement allows you to examine the current state of a program  and respond appropiately to that state.
+
+for car in cars:
+  if car == 'bmw':
+    print(car.upper())
+  else:
+    print(car.title())
+  
+# CONDITIONAL TESTS
+# Python uses True and False to decide whether the code in an if statement should be executed. 
+# If conditional test evaluates to True, Python executes the code following th if statement.
+# If the test evaluates to False, Python ignores the code following the if statement.
+
+# The first line sets the value of car to 'bmw'and the second test checks
+# whether the value of a variable is equal to the value of interest:
+car = 'bmw'
+if car == 'bmw':
+  print(True)
+else:
+  print(False)
+
+# The equality operator returns True if the values on the left and right side of the operator match
+# and false if they don't match
+
+# IGNORING CASE WHEN CHECKING FOR EQUALITY
+# Two values with different capitalization are not considered equal:
+
+car ='Audi'
+
+if car == 'audi':
+  print(True)
+else:
+  print(False)
+
+# If we convert the value lowecarse before the equality operator it would be true
+
+if car.lower() == 'audi':
+  print(True)
+else:
+  print(False) 
+
+
