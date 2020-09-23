@@ -84,3 +84,6 @@ print(f"You ordered a {pizza['crust']}-crust pizza"
       "with the following toppings:")
 for topping in pizza['toppings']:
   print("\t" + topping)
+
+# The dictionary holds two different keys, 'crust' that only has a single value, and 
+# 'toppings' that is a list with the values 'mushrooms' and 'extra cheese'
