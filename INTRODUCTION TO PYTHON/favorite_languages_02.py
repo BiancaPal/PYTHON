@@ -28,4 +28,3 @@ for name, languages in favorite_languages.items():
   
   for language in languages:
       print(f"\t {language.title()}")
-  
