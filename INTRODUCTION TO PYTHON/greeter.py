@@ -19,14 +19,3 @@ prompt += "\nWhat is your first name?"
 
 name = input(prompt)
 print(f"Hello, {name}")
-
-# USING INT() TO ACCEPT NUMERICAL INPUT
-# When you use the input() function, Python interprets everything the user enters as 
-# a string
-
-age = input("How old are you? ")
-
-if age < 18:
-  print("You are unnder eighteen")
-else:
-  print("You are above eighteen")
