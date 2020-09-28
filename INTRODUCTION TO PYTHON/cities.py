@@ -17,3 +17,6 @@ while True:
     break
   else:
     print(f"I'd love to go to {city.title()}!")
+
+# A loop that starts with while True will run forever unless it reaches a break
+# statement. 
