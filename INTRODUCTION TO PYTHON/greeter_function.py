@@ -29,3 +29,7 @@ greet_user(name)
 
 # In here we entered username, that allows you to accept any value of username you specify
 # Now the function expects you to provide a value for username each time you call it.
+
+# The username is a parameter, a piece of information the function needs to do its job. And 
+# the value 'jesse' is an argument, which is a piece of information that's passed from a 
+# function call to a function. The argument 'jesse' was assigned to the parameter username.2
