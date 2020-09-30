@@ -45,3 +45,6 @@ print(programmer)
 musician = get_formatted_name_default_middle('John','Cooper','Lee')
 print(musician)
 
+# Python interprets non-empty strings as True, if a middle name argument is in the function
+# call so if middle_name is provided, the first,middle, and last names are combined to form
+# a full name. 
