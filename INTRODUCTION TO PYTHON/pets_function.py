@@ -52,4 +52,33 @@ def describe_pet_default(pet_name, animal_type='dog'):
 
 describe_pet_default(pet_name='lola')
 
-# Non-default argument follows default argument
+# Non-default argument follows default argument. This happens because Python still interprets
+# this as a positional argument, so if the function is called with just a pet's name, that 
+# argument will match up with the first parameter listed in the function's definition.
+
+# To describe an animal other than dog, you could use a function call like this.
+describe_pet_default(pet_name='jiji',animal_type='turtle')
+
+
+# When you use default values, any parameter with a default value needs to be listed after 
+# all the parameters that don't have default values. This allows Python to continue interpreting
+# positional arguments correctly.
+
+
+# All the following calls would work for this function.
+describe_pet_default('willie')
+describe_pet_default(pet_name='willie')
+
+describe_pet_default('harry','hamster')
+describe_pet_default(pet_name='harry', animal_type='hamster')
+describe_pet_default(animal_type='hamster', pet_name='harry')
+
+# If you don't want to write the keywords, you must define each argument in the same orther
+# as the parameters. You can switch the order of the arguments if you include the keywords.
+
+# AVOIDING ARGUMENT ERRORS
+# If you try to call a function with no arguments, you'll get an error. Python will tell you
+# which are the missing arguments. Also if you provide to many arguments you should get a 
+# simmilar traceback.
+
+
