@@ -10,9 +10,9 @@ class FreelancerSpider(scrapy.Spider):
         self.log('I just visited: '+ response.url)
         for service in response.css('div.JobSearchCard-item'):
             item =  {
-            'name_job': service.css('a.JobSearchCard-primary-heading-link::text').extract(),
-            'price': service.css(' div.JobSearchCard-secondary-price::text').extract(),
-            'bids': service.css(' div.JobSearchCard-secondary-entry::text').extract(),
+                'name_job': service.css('a.JobSearchCard-primary-heading-link::text').extract(),
+                'price': service.css(' div.JobSearchCard-secondary-price::text').extract(),
+                'bids': service.css(' div.JobSearchCard-secondary-entry::text').extract(),
             }
             yield item
 
