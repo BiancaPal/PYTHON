@@ -94,3 +94,56 @@ my_dog = Dog('Willie', 6)
 
 print(f"My dog's name is {my_dog.name}.")
 print(f"My dog is {my_dog.age} years old.")
+
+# We tell Python to create a dog whose name is Willie, and whose age is 6. 
+# When Python reads this line, it calls the __init__() method in Dog with 
+# the arguments 'Willie' and 6. The __init__() method creates an instance
+# representing this particular dog and sets the name and age attributes
+# using the values we provided.Python then returns an instance representing
+# this dog. We assign that instance to the variable my_dog. The naming 
+# convention is helpful here: we can usually assume that a capitalized
+# name like Dog refers to a class, and a lowercase name like my_dog
+# refers to a single instance created from a class.
+
+# ACCESSING ATTRIBUTES
+# To access the attributes of an instance, you use a dot notation.
+my_dog.name
+# Dot notation is often used in Python. This syntax demonstrates how Python
+# finds an attribute's value. Here Python looks at the instance my_dog
+# and then finds the attribute name associated with my_dog. This is the 
+# same attribute referred to as self.name in the class Dog. We use the
+# same approach to work with the attribute age.
+
+# The output is a summary of what we know about my_dog
+
+# CALLING METHODS
+# After we create an instance from the class Dog, we can use dot notation
+# to call any method defined in Dog. Let's make our dog sit and roll over.
+
+my_dog = Dog('Ramnse',6)
+my_dog.sit()
+my_dog.roll_over()
+
+# To call a method, give the name of the instance ( in this case my_dog)
+# and the method you want to call, separated by a dot. When Python reads
+# my_dog.sit() it looks for the method sit() in the class Dog and runs
+# that code. Python interprets the line my_dog.roll_over() in the same 
+# way.
+
+# CREATING MULTIPLE INSTANCES
+# You can create as many instances from a class as you need. Let's create a second dog called your_dog:
+
+my_dog = Dog("Willie",9)
+your_dog = Dog("Max",8)
+
+print(f"My dog is {my_dog.age} years old")
+print(f"My dog's name is {my_dog.name}.")
+my_dog.sit
+
+print(f"Your dog is {your_dog.age} years old")
+print(f"Your dog's name is {your_dog.name}")
+your_dog.roll_over
+
+# You can make as many instances from one class as you need, as long as you
+# give each instance a unique variable or it occupies a unique spot in a list
+# or dictionary.
