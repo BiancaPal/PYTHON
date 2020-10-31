@@ -14,8 +14,18 @@ class Restaurant:
     """Simulate the opening of a restaurant"""
     print(f"The restaurant {self.name} is opening!")
 
-my_restaurant = Restaurant('bbe','burguer')
+my_restaurant = Restaurant('bbg','burguer')
 
 my_restaurant.describe_restaurant()
 my_restaurant.open_restaurant()
+
+my_second_restaurant = Restaurant('Lo Brull','Mediterranian')
+
+my_second_restaurant.describe_restaurant()
+my_second_restaurant.open_restaurant()
+
+my_third_restaurant = Restaurant('El paso del diablo','Mexican')
+
+my_third_restaurant.describe_restaurant()
+my_third_restaurant.open_restaurant()
 
