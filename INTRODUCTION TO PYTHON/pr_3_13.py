@@ -5,7 +5,8 @@
 
 import turtle
 
-for i in range(1,4):
+s = turtle.getscreen()
+
+for i in range(1,5):
   turtle.forward(100)
-  for j in range(1):
-    turtle.left(100)
+  turtle.left(90)
