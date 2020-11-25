@@ -3,8 +3,13 @@
 
 numero = int(input("Introduce un numero: "))
 
-string = [1,2,3,4,5,6,7,8,9,0]
+numero_1 = 1
+for i in range(numero+1):
+  for j in range(1,i+1):
+    print(numero_1, end =' ')
 
-for i in range(0,numero):
-  for j in string:
-    print(string[j])
+    if numero_1 < 9:
+      numero_1 += 1
+    else:
+      numero_1 = 0
+  print()
